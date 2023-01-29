@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- * Tailwind -->
+  <link rel="stylesheet" href="/styles/output.css">
+
+  <!-- * LESS -->
+  <link rel="stylesheet/less" type="text/css" href="styles/dashboard.less" />
+  <script src="/js/less.min.js"></script>
+
+  <link rel="icon" type="image/png" href="/img/main-icon.png"/>
+
+  <!-- ? Manifest -->
+  <link rel="manifest" href="/manifest.json">
+
+  <title>Dashboard</title>
+</head>
+<body>
+  <div class="navbar bg-base-100 ui-nav" data-theme="dark">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <label tabindex="0" class="btn btn-ghost btn-circle">
+          <svg  class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+        </label>
+        <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 ui-nav" >
+          <li><a href="/pages/weight.html">Entrenamiento con pesas</a></li>
+          <li><a href="/pages/calistenia.html">Entramiento calistenia</a></li>
+          <li><a href="/pages/supplements.html">Suplementos</a></li>
+          <li><a href="/pages/nutrition.html">Alimentación</a></li>
+          <li><a href="/pages/superavit.html">Superávit / Déficit / Perdida de Grasa</a></li>
+          <li><a href="/pages/hypertrophy .html">Hipertrofia</a></li>
+          <li><a href="/pages/complex.html">Ejercicios complejos</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="navbar-center">
+      <a class="btn btn-ghost normal-case text-xl">FitnessNow</a>
+      <img src="/img/main-icon.png" class="block h-8 w-auto">
+    </div>
+    <div class="navbar-end"></div>
+  </div>
+  
+  <!-- ? PAGE CONTENT -->
+  <div class="hero min-h-screen" data-theme="dark">
+    <div class="hero-overlay bg-opacity-70"></div>
+    <div class="hero-content text-center text-neutral-content">
+      <div class="max-w-md">
+        <h1 class="mb-5 text-5xl font-bold" style="color: white !important;">BIENVENIDO</h1>
+        <p class="mb-5" style="color: white !important;">Esperamos que la información de nustro sitio le resulte util durante sus entrenamientos 💪🏻</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- -------------------------------------------- -->
+
+  <div class="p-10 categories">
+    <h1 class="mb-10 text-3xl text-center">Estas son algunos de los articulos que puede encontrar en nuestro sitio 🏋🏻‍♂️</h1>
+    <div class="flex flex-col w-full lg:flex-row">
+      
+      <div class="flex-grow h-64 card">
+        <div class="card-img" style="background-image: url('/img/pesas.jpg'); height: 100%;">
+            <a class="link" href="/pages/weight.html"></a>
+        </div> 
+        <div class="mt-1 text-center font-bold">Pesas</div>
+      </div>
+      <div class="divider lg:divider-horizontal"> </div> 
+
+      <div class="flex-grow h-64 card">
+        <div class="card-img" style="background-image: url('/img/calistenia.jpg'); height: 100%;">
+          <a class="link" href="/pages/calistenia.html"></a>
+        </div> 
+        <div class="mt-1 text-center font-bold">Calistenia</div>
+      </div>
+      <div class="divider lg:divider-horizontal"> </div> 
+
+      <div class="flex-grow h-64 card">
+        <div class="card-img" style="background-image: url('/img/suplementos.jpg'); height: 100%;">
+          <a class="link" href="/pages/supplements.html"></a>
+        </div> 
+        <div class="mt-1 text-center font-bold">Suplementos</div>
+      </div>
+      <div class="divider lg:divider-horizontal"> </div> 
+
+      <div class="flex-grow h-64 card">
+        <div class="card-img" style="background-image: url('/img/alimentación.jfif'); height: 100%;">
+          <a class="link" href="/pages/nutrition.html"></a>
+        </div> 
+        <div class="mt-1 text-center font-bold">Alimentación</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

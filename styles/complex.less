@@ -1,0 +1,41 @@
+@import url('navbar.less');
+
+@font-face {
+  font-family: mexaTry;
+  src: url('/fonts/Chango-Regular.ttf');
+}
+
+.min-h-screen {
+  min-height: 40vh !important;
+  background-image: url('/img/ejercicios-complejos.webp');
+
+  h1 {
+    font-family: 'mexaTry';
+  }
+}
+
+.card-img {
+  margin-top: 15vh;
+  background-image: url(../img/complex.webp);
+  background-size: cover; 
+  border-radius: 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.txt {
+  text-align: justify;
+  text-justify: inter-word;
+  min-height: 70vh !important;
+}
+
+@media screen and (min-width: 720px) {
+  .txt {
+    max-width: 50vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .txt {
+    max-width: 80vw;
+  }
+}

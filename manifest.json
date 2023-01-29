@@ -1,0 +1,15 @@
+{
+  "name": "FitnessNow",
+  "short_name": "restaurant",
+  "description": "PWA for a economic restaurant with theme of mexcain food",
+  "start_url": "index.html",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/img/main-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
